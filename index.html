@@ -29,7 +29,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
-                    <a role="button" class="btn bg-info text-white btn-lg mt-4" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a role="button" class="btn bg-info text-white btn-lg mt-4" id="reserveButton">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -103,7 +103,7 @@
                     <li class="nav-item"> <a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> Login
                     </a>
                 </span>
@@ -155,8 +155,8 @@
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="homeCarousel" data-slide-to="1"></li>
-                        <li data-target="homeCarousel" data-slide-to="2"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -170,7 +170,7 @@
                             <img class="d-block w-100" src="img/react-lake.jpg" alt="React Lake Campground" />
                             <div class="carousel-caption">
                                 <h3>React Lake Campground</h3>
-                                <p class="d-none-d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
